@@ -1,0 +1,59 @@
+.heading{
+ text-align: center;
+ border-radius: 10px 10px 10px 10px;
+ padding: 10px;
+ background-color: rgb(50, 72, 112);
+ color: white;
+}
+
+.Box{
+    background-color: rgba(106, 167, 148, 0.774);
+    padding: 10px;
+}
+
+.head1{
+    text-align: center;
+}
+
+.box1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+}
+.box2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+}
+
+
+.input1{
+    width: 200px;
+    height: 30px;
+    margin-left: 10px;
+}
+.input2{
+    width: 300px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 9%;
+}
+.input3{
+    width: 300px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.box3{
+    align-items: center;
+    text-align: center;
+
+}
+.btn{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(50, 72, 112);
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+
+}
