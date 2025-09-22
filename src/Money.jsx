@@ -1,5 +1,6 @@
 import React from 'react'
 import './money.css'
+import ExpenseList from './ExpenseList'
 
 function Money() {
   return (
@@ -25,11 +26,9 @@ function Money() {
             <button className='btn'><b>Add Expense</b></button>
         </div>
     </div>
-
+    <br />
     <div className="Box2">
-        expense  
-        amount
-        delete
+        <ExpenseList />
     </div>
     </>
   )
