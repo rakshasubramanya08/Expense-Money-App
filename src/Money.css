@@ -55,6 +55,7 @@
     background-color: rgb(50, 72, 112);
     color: white;
     border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
 }
 
 .Box2{
