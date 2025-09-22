@@ -55,5 +55,9 @@
     background-color: rgb(50, 72, 112);
     color: white;
     border-radius: 20px 20px 20px 20px;
+}
 
+.Box2{
+    background-color: rgba(106, 167, 148, 0.774);
+    padding: 10px;
 }
