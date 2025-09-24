@@ -30,9 +30,15 @@ function Money() {
       <div className='Box'>
         <h2 className='head1'>Money Expenses</h2>
 
+        <div className="dat">
+            <label>Date : </label>
+            <input className='date' type="date" />
+        </div>
+
         <div className="box2">
           <label><h4>Expense Name :</h4></label>
           <input 
+            className='input1'
             type="text" 
             placeholder='Enter Name ' 
             value={username} 
@@ -41,6 +47,7 @@ function Money() {
 
           <label><h4>Expense Amount :</h4></label>
           <input 
+            className='input2'
             type="number" 
             placeholder='Enter amount' 
             value={usermoney} 
