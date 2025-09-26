@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
@@ -23,5 +27,18 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.4.0",
     "vite": "^7.1.7"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakshasubramanya08/Expense-Money-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rakshasubramanya08/Expense-Money-App/issues"
+  },
+  "homepage": "https://github.com/rakshasubramanya08/Expense-Money-App#readme"
 }
