@@ -2,6 +2,11 @@ import React from 'react'
 import './ExpenseList.css'
 
 function ExpenseList({ expenses, onDelete }) {
+  if (expenses.length === 0) {
+    // 🚫 Don't render anything when no expenses
+    return null;
+  }
+
   const total = expenses.reduce((sum, exp) => sum + exp.amount, 0);
 
   return (
@@ -17,27 +22,21 @@ function ExpenseList({ expenses, onDelete }) {
             </tr>
           </thead>
           <tbody>
-            {expenses.length === 0 ? (
-              <tr>
-                <td colSpan="4">No expenses added yet</td>
+            {expenses.map((exp, index) => (
+              <tr key={exp.id}>
+                <td>{index + 1}</td>
+                <td>{exp.name}</td>
+                <td>{exp.amount}</td>
+                <td>
+                  <button 
+                    className='delbtn' 
+                    onClick={() => onDelete(exp.id)}
+                  >
+                    ⛔
+                  </button>
+                </td>
               </tr>
-            ) : (
-              expenses.map((exp, index) => (
-                <tr key={exp.id}>
-                  <td>{index + 1}</td>
-                  <td>{exp.name}</td>
-                  <td>{exp.amount}</td>
-                  <td>
-                    <button 
-                      className='delbtn' 
-                      onClick={() => onDelete(exp.id)}
-                    >
-                      ⛔
-                    </button>
-                  </td>
-                </tr>
-              ))
-            )}
+            ))}
           </tbody>
         </table>
       </div>
@@ -49,4 +48,3 @@ function ExpenseList({ expenses, onDelete }) {
   )
 }
 
-export default ExpenseList
